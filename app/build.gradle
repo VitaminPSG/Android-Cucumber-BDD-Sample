@@ -12,7 +12,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         debug {
@@ -30,7 +30,7 @@ dependencies {
 
     androidTestImplementation 'org.mockito:mockito-core:2.5.5'
     androidTestImplementation 'com.linkedin.dexmaker:dexmaker-mockito:2.2.0'
-    androidTestImplementation ('com.android.support.test.espresso:espresso-core:2.2.1') {
+    androidTestImplementation ('androidx.test.espresso:espresso-core:3.1.0-alpha4') {
         exclude module: 'support-annotations'
     }
 
@@ -39,8 +39,8 @@ dependencies {
     testImplementation 'info.cukes:cucumber-junit:1.2.5'
     testImplementation 'org.mockito:mockito-core:2.5.5'
 
-    compile 'com.android.support:appcompat-v7:28.0.0'
-    compile 'com.android.support:recyclerview-v7:28.0.0'
+    compile 'androidx.appcompat:appcompat:1.0.0-beta01'
+    compile 'androidx.recyclerview:recyclerview:1.0.0-beta01'
 }
 
 coveralls {

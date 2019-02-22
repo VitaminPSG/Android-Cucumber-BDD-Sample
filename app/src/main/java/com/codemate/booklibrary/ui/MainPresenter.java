@@ -1,6 +1,6 @@
 package com.codemate.booklibrary.ui;
 
-import android.support.annotation.VisibleForTesting;
+import androidx.annotation.VisibleForTesting;
 
 import com.codemate.booklibrary.data.Book;
 import com.codemate.booklibrary.data.Library;
